@@ -1,1 +1,0 @@
-### This is where we will put images and icons that are going to be used in our html page
