@@ -10,12 +10,24 @@ group member:
 4.Hana Samara
 
 
-### Number Gusser Game ####
+### Number Guesser Game ####
 ### Design and created by Haider ###
 
 ### Rock Paper Scissor Game ####
 ### Design and created by Awaab ###
-
+Created the game display region that is divided into game display and score description area.
+The score description section is further subdivided into Game Description and Score.
+Designed how the game display area would look like and integrated functionalities of 
+a normal rock, paper, scissors activity using buttons as input from the user.
+There are only 5 rounds for the game until a winner is decided.
+Game is turn-based:
+     - User has to wait for computer response and round result before selecting another option
+     - Once it is the user's turn, will display above the "weapon choices" buttons "Your turn"
+Game is designed to have 3 match outcomes: win, lose, or tie
+Game theme is tied with neon/arcade style aesthetic look and incorporates brightly colored buttons 
+contrasting the dark background display. 
+     -All pictures,gifs were sourced from Canva or Unsplash free images
+     -Game Title was specially designed in Canva platform
 
 ### Hangman Game ####
 ### Design and created by Samina ###
