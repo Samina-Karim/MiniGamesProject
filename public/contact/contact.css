@@ -1,0 +1,385 @@
+html{
+    height: 100%;
+}
+
+body{
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(230, 245, 246) ;/*#f4e022 */
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    
+}
+
+.head{
+    display: flex; /* Make list items appear in one line */
+    font-family:Verdana, Geneva, Tahoma, sans-serif; 
+    height: 15%;
+    background-image: url('../img/blue-bg.png') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    list-style-type: none;
+    align-items:center; /* Vertically center the elements */
+    justify-content:space-between; /* Create space between the span and the list items */
+
+}
+
+.logo{
+    padding-left: 10px;
+    font-size: 36px; /* Set the font size as desired */
+    font-weight: bold; /* Set the font weight as desired */
+    text-transform: uppercase; /* Convert the text to uppercase */
+    display: inline-block;
+    animation: lightUp 2s infinite; /*create animation named lightUp to create light up effect*/
+}
+
+.logo-img{
+    margin-left: 10px;
+}
+
+@keyframes lightUp {
+    0%, 100% {
+        color: #22c4ff; /* Color for the first letter */
+        text-shadow: 0 0 5px #22c4ff; /* Text shadow for the first letter */
+    }
+    25% {
+        color: rgb(233, 17, 136); /* Color for the second letter */
+        text-shadow: 0 0 5px rgb(233, 17, 136); /* Text shadow for the second letter */
+    }
+    50% {
+        color: purple; /* Color for the third letter */
+        text-shadow: 0 0 5px purple; /* Text shadow for the third letter */
+    }
+    75% {
+        color: white; /* Color for the fourth letter */
+        text-shadow: 0 0 5px white; /* Text shadow for the fourth letter */
+    }
+}
+
+nav{
+    text-align: center;
+    flex: 1; /* All items take an equal share of available space. */
+   
+}
+
+nav ul {
+    list-style: none; /* Remove default list bullets */
+    padding: 0; /* Remove default padding for the list */
+    margin: 0;
+    display: flex; /* Make list items appear in one line */
+    justify-content: center;
+    
+}
+nav ul li {
+    margin-right: 30px; /* Add spacing between list items */
+    justify-self: center;
+    padding-top: 50px;
+    position: relative;
+    margin-bottom: 35px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    padding-inline: 10px;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    color: white;
+    font-size: large;
+    align-items: center;
+    text-align: center;
+    border: 2px solid transparent;
+    transition: border-color,transform  ,box-shadow ; 
+    cursor: pointer;
+}
+
+nav ul li a:hover{
+    border-color: #800080;
+    border-radius: 20px;
+    transform: scale(1.1);
+    box-shadow: 0 0 20px purple;
+}
+
+.search
+{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    font-family:sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 10px;
+    text-align: center;
+    color: white;
+
+}
+
+.search input[type="text"] {
+    border: 2px solid black; /* Add a border */
+    border-radius: 15px; /* Set the border radius for rounded corners */
+    padding: 4px; /* Add padding for spacing inside the input box */
+    width: 150px; /* Set the desired width */
+    font-size: 16upx; /* Adjust the font size */
+    color: blue;
+}
+
+
+.end {
+    display: block;
+    
+}
+
+.back{
+    margin-left: 200px;
+}
+
+/* Initially hide the dropdown menu */
+.game-dropdown {
+    display: none;
+    position: absolute;
+    background-color:white;
+    list-style-type: none;
+    text-align: center; /* Center-align the text */
+    height: 40px;
+    box-sizing:border-box;
+    white-space: nowrap;/* Prevent line breaks in dropdown items */
+    right:50%; /* Align the dropdown to the right */
+    transform: translateX(50%);/* Center the dropdown */
+    padding-top: 10px;
+    
+}
+
+/* When hovering over the game link, show the dropdown as a row */
+.game:hover .game-dropdown{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    border: 1px transparent;
+    border-radius: 20px;
+    /* margin-top: 10px; remove it to select from dropdown menu*/ 
+   
+}
+
+/* Optional: Add styles for the dropdown items */
+.game-dropdown li {
+    padding: 0; /* Add spacing between items */
+}
+
+.game-dropdown a{
+    color: black;
+    text-decoration: none;
+    align-items: center;
+
+    
+}
+
+/* Media query for mobile devices */
+@media (max-width: 600px) {
+    .nav li {
+        flex-direction: column; /* Stack elements horizontally on mobile */
+        
+    }
+    .search{
+        display: none;
+    }
+}
+
+
+/* Contact Page Specifics */
+
+.about {
+    font-family:sans-serif;
+    font-size: 28px;
+    letter-spacing: 4px;
+    display: inline;
+    padding: 5px 15px;
+    font-weight: bolder;
+    background: #590477;
+    color: white;
+    border-radius: 25px;
+    width:300px;
+    text-align: center;
+    margin: 40px 0 10px 20px;
+    
+}
+.contact{
+    font-family:sans-serif;
+    font-size: 28px;
+    letter-spacing: 4px;
+    display: inline;
+    padding: 5px 15px;
+    font-weight: bolder;
+    background: #590477;
+    color: white;
+    border-radius: 25px;
+    width:300px;
+    text-align: center;
+    margin: 10px 0 10px 20px;
+}
+.paragraph{
+    padding-left: 40px;
+    text-align: left;
+    justify-content: left;
+    font-size: 18px;
+    width: 700px;
+    margin: 0 0 10px 0 ;
+}
+
+/* Form editing */
+
+
+#select{
+    margin-bottom: 10px;
+    /* background-color:#b608f6 ;
+    color: whitesmoke; */
+    margin-left: 30px;
+    padding: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: sans-serif;
+    width: 150px;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid #590477;
+}
+#select option{
+    background-color: rgba(230, 20, 226, 0.748) !important;
+    font-size: 10px;
+    margin-left: 30px;
+    padding-left: 35px;
+    
+}
+
+#personal{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    padding-left: 30px;
+    font-size: 20px;
+    font-weight: normal;
+    gap: 30px
+}
+#name-box{
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 16px;
+    border: 2px solid #590477;
+}
+
+#email-box{
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 16px;
+    border: 2px solid #590477;
+}
+
+#entry{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 0;
+    padding-left: 30px;
+    font-size: 20px;
+    font-weight: normal;
+    
+}
+
+.text-box{
+    width: 490px;
+    height: 180px;
+    border-radius: 5px;
+    font-size: 16px;
+    border: 2px solid #590477;
+    resize: none;
+}
+
+#submit_b{
+    padding: 3px 30px;
+    border:0;
+    background-color: #590477;
+    color: white;
+    cursor:pointer;
+    margin-left: 35px;
+    font-size: 22px;
+    font-weight:bold ;
+    border-radius: 20px;
+}
+
+/* Image on the side */
+
+#c_img{
+    position:absolute;
+    top: 20%; /* Position at 50% from the top */
+    right: 0; /* Position at the right */
+    padding: 30px;
+    display: block;
+    border-radius: 70px;
+    margin-right: 30px;
+}
+
+#thankmsg{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 40%; 
+    transform: translate(-30%, -30%);
+    background-color:#590477;
+    background-image: url("../img/smile.png");
+    background-size: contain;
+    background-repeat:no-repeat;
+    padding: 50px;
+    border-radius: 20px;
+    border: 1px solid #590477;
+    text-align: center;
+    color:white;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    width: 400px;
+}
+#thankmsg p{
+    padding-left: 130px;
+}
+
+
+/* back arrow style */
+
+
+#back-arrow{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 40%; 
+    transform: translate(-30%, -30%);
+    background:rgb(117, 3, 193);
+    background-image: url("../img/question.gif");
+    background-size: initial;
+    /* background-repeat: no-repeat; */
+    padding: 50px;
+    border-radius: 20px;
+    border: 1px solid rgb(117, 3, 193);
+    text-align: center;
+    color:whitesmoke;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+#yes,#no{
+    background-color: white;
+    color: rgb(117, 3, 193);
+    height: 40px;
+    width: 60px;
+    margin: 20px;
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+#yes:hover, #no:hover{
+    background-color: aqua;
+}
