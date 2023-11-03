@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TicTacToe</title>
+    <link rel="stylesheet" type="text/css" href="./tictac.css">
+</head>
+<body>
+    <header class="head">
+        <span class="logo">H A S H<br>G A M E S</span>
+        <img class="logo-img" src="../img/logoo.png" height="70px" width="100px">
+        <nav>
+            <ul>
+                <li>
+                    <a href="../main/main.html"><img class="icon" src="../img/home1.png">Home</a>
+                </li>
+                <li class="game">
+                    <a href="#"><img class="icon" src="../img/game1.png">Games</a>
+                    <ul class="game-dropdown">
+                        <li><a href="../game/Number_guesser.html">Number Guesser</a></li>
+                        <li><a href="#">Rock Paper Scissors</a></li>
+                        <li><a href="../game/game.html">Hangman</a></li>
+                        <li><a href="#">Blackjack</a></li>
+                        <li><a href="../game/tictac.html">Tic Tac Toe</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../contact/contact.html"><img class="icon" src="../img/contact1.png">Contact</a>
+                </li>
+                <li><a href="#"><img class="icon" src="../img/login1.png">Login</a></li>
+                <li><a href="#"><img class="icon" src="../img/trophy1.png">Leaderboard</a></li>
+            </ul>
+        </nav>
+
+        <div class="end">
+        
+        <a href="../main/main.html" id="back-image" ><img class="back"  src="../img/backarrow.png" ></a>
+
+        <form class="search">
+            <label >Search: </label><br>
+            <input type="text">
+        </form>
+
+        </div>
+
+    </header>
+
+    <main class="main">
+    
+        <section class="game-display">
+            <h1 class="maintitle">Tic Tac Toe</h1>
+            <div class="board">
+                <div class="cell0" id="cell"></div>
+                <div class="cell1" id="cell" ></div>
+                <div class="cell2" id="cell"></div>
+                <div class="cell3" id="cell"></div>
+                <div class="cell4" id="cell"></div>
+                <div class="cell5" id="cell"></div>
+                <div class="cell6" id="cell"></div>
+                <div class="cell7" id="cell"></div>
+                <div class="cell8" id="cell"></div>
+            </div>
+            <div class="winner-line" id="winner-line"></div>
+            
+            <button id="start-button">Start Game</button> <!-- Add the Start Game button -->
+            
+            
+            <div id="choice-popup"  class="popup">
+                <p class="choice-header">Choose:</p>
+                <br>
+                <div class="hidden-image">
+                    <img src="../img/X.png" id="x-image" class="image-choice">
+                    <p id="or"> OR </p>
+                    <img src="../img/o.png" id="o-image" class="image-choice" >
+                </div>
+            </div>
+
+
+
+            <div class='popup-computer' id="computer-choosing-popup"> <!-- Computer popup for choosing-->
+                <img src="../img/waiting-icon.gif" height="150px" width="150px">
+            </div>
+
+            
+        </section>
+
+        
+
+
+        <section class="score-description">
+
+            <section class="score-display">
+                <h2 class="score-header">Score Display</h2>
+                <p class="round"></p>
+                <p class="game-status"></p>
+                <p class="result"></p>
+            </section>
+            
+            <section class="game-description">
+                <h2 class="desc-header">Game Description</h2>
+                <p class="desc">Welcome to the game of Tic-Tac-Toe! This classic two-player game challenges your strategy and wit. Before you start, here are the rules you need to know.<br>
+                    <strong class="blue-text">Objective:</strong><br>
+                    The objective of Tic-Tac-Toe is to be the first player to get three of your symbols in a row on the 3x3 grid.<br>
+                    <strong class="blue-text"> Game Setup:</strong><br>
+                    1. The game is played on a 3x3 grid, and it starts with an empty board.<br>
+                    2. You will be "X," and the computer will be "O." "X" always goes first.<br>
+                    <strong class="blue-text"> Game Rounds:</strong><br>
+                    1. This game is played in a series of three rounds.<br>
+                    2. To be declared the overall winner, you need to win 2 out of the 3 rounds.<br>
+                    <strong class="blue-text"> Gameplay:</strong><br>
+                    1. You take turns to make your moves, starting as "X."<br>
+                    2. A move consists of selecting an empty cell on the grid and marking it with your symbol ("X").<br>
+                    3. The computer will make its moves as "O."<br>
+                    <strong class="blue-text">Winning the Round:</strong><br>
+                    To win a round, you must achieve one of the following:<br>
+                    * Get three of your symbols in a horizontal row (across).<br>
+                    * Get three of your symbols in a vertical row (up or down).<br>
+                    * Get three of your symbols in a diagonal row (from top-left to bottom-right or from top-right to bottom-left).
+                </p>
+
+            </section>
+
+            
+            
+        </section>
+
+
+        <div class="result-status" id="round-popup" > <!-- popup for result-->
+            <p class="result-view"></p>
+            <!-- <button id="rounds"></button> -->
+        </div>
+
+        <div id="gameover">
+            <p class="gameover-title">Game Over</p>
+            <p class="gameover-winner"></p>
+            <button id="gameover-button">Play Again</button>
+
+        </div>
+
+
+        <div id="back-arrow">
+            <p>Are you sure you want to return back to home page!!</p>
+            <button id="yes">Yes</button>
+            <button id="no">No</button>
+        </div>
+    </main>
+
+    
+    <script src="./tictac.js"></script>
+</body>
+</html>

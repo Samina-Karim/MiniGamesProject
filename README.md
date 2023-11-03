@@ -1,24 +1,54 @@
 # MiniGamesProject
 CIC: MiniGamesProject
 
-This is the readme file
+Gaming website title : Hash
+
+group member:
+1.Samina
+2.Awaab
+3.Haider
+4.Hana Samara
 
 
+### Number Gusser Game ####
+### Design and created by Haider ###
 
-Haider Mir:
+### Rock Paper Scissor Game ####
+### Design and created by Awaab ###
 
-I contributed to the 'MiniGamesProject', specifically focusing on the 'Number Guesser' game, a fun number prediction game where the user has to try to guess the number. As a developer, I implemented the following features:
+
+### Hangman Game ####
+### Design and created by Samina ###
+
+### Tic Tac Toe Game ####
+### Design and created by Hana ###
+
+-- Choose Halloween theme to design and style this gaming page
+-- the player will VS. Computer
+-- player gonna choose first to be X or O
+-- This game gonna be for 3 Rounds
+-- Each round will be a winner for a that round and his score gonna be increase on Score display
+-- if there is a tie we will not add any points to any player
+-- after the 3rd round we will compare user score with computer score to decided who is the winner in the whole game
+-- Enjoy playing this game and wish you luck :)
+
+
+###Design and created by Haider ###
+
+Here's your text with spelling and grammar corrections:
+
+"I contributed to the 'MiniGamesProject', specifically focusing on the 'Number Guesser' game, a fun number prediction game where the user has to try to guess the number. As a developer, I implemented the following features:
 
 1. I allowed the user to guess a number.
 2. I allowed the user to receive hints based on the number they chose.
 3. I allowed the users to see the previous numbers they have chosen.
 4. Designed an easy-to-use interface with a hot-cold theme that matches the aesthetics of the website.
 
-Challenges I faced included ensuring that my text does not go over the designated container. To address this, I referenced previous lecture notes, W3School and YouTube tutorials to set the CSS attributes.
+Challenges I faced included ensuring that my text does not go over the designated container. To address this, I referenced previous lecture notes and YouTube tutorials to set the CSS attributes.
 
 Technologies and Tools I used include HTML, CSS, and JavaScript, along with the assistance of Git, GitHub, YouTube, ChatGPT, and VS Code.
 
 I hope that you enjoy this number guesser game with your friends and family!
 
-Note: Here is the link to the YouTube video I used as a reference: 
-        1. [YouTube Video Reference](https://www.youtube.com/watch?v=gPbpGWFl8mQ)"
+Note: Here is the link to the YouTube video I used as a reference:
+     1.  [YouTube Video Reference](https://www.youtube.com/watch?v=gPbpGWFl8mQ)"

@@ -1,12 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>contact</title>
-    <link rel="stylesheet" type="text/css" href="./contactcss.css">
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width", initial-scale ="1.0">
+
+    <title> Contact Us </title>
+    
+    <link rel = "stylesheet" href="contact.css">
+    
 </head>
+
 <body>
+
+<!-- Header navigation Bar -->
     <header class="head">
         <span class="logo">H A S H<br>G A M E S</span>
         <img class="logo-img" src="../img/logoo.png" height="70px" width="100px">
@@ -18,7 +24,7 @@
                 <li class="game">
                     <a href="#"><img class="icon" src="../img/game1.png">Games</a>
                     <ul class="game-dropdown">
-                        <li><a href="#">Number Guesser</a></li>
+                        <li><a href="../game/Number_guesser.html">Number Guesser</a></li>
                         <li><a href="#">Rock Paper Scissors</a></li>
                         <li><a href="../game/game.html">Hangman</a></li>
                         <li><a href="#">Blackjack</a></li>
@@ -32,23 +38,71 @@
                 <li><a href="#"><img class="icon" src="../img/trophy1.png">Leaderboard</a></li>
             </ul>
         </nav>
-        <form class="search">
-            <label >Search: </label><br>
-            <input type="text">
-        </form>
 
-    </header>
-    <main class="main">
+        <div class="end">
         
-
-    </main>
-    <footer class="foot">
-
-    </footer>
+            <a href="../main/main.html" id="back-image"><img class="back" src="../img/backarrow.png" ></a>
     
-    <script src="./contactjs.js"></script>
+            <form class="search">
+                <label >Search: </label><br>
+                <input type="text">
+            </form>
+    
+            </div>
+</header>
+
+
+<body class="main">
+
+    <h1 class="about">ABOUT US</h1>
+    <p class="paragraph">H.A.S.H Games is a collection of your most favorite childhood favorites brought into the virtual world. It was created as a project for Coding in Colour
+    Full-Stack Developer program in Fall 2023. Enjoy while you can!!!</p>
+
+
+    <h1 class="contact">CONTACT US</h1>
+
+    <div id = "contact_form">
+        <form id="myform" action ="submit_form_here">
+            
+            <select id="select">
+                <option class ="options" value="" disabled selected >Subject</option>
+                <option class ="options" value="new_request" >New Game Request</option>
+                <option class ="options" value="bug">Bug Issue</option>
+                <option class ="options" value="other">Other</option>
+            </select>
+
+            <section id = "personal">
+                <input id="name-box" type="name" placeholder="Name....">
+                <input id="email-box" type="email" placeholder="Email Address....">
+            </section>
+
+            <section id ="entry">
+                <textarea class="text-box" placeholder="Write your message here...."></textarea>
+            </section>
+
+            <button id="submit_b">Submit</button>
+
+        </form>
+    </div>
+
+<img id="c_img" src ="../img/cont-img.png" width="400" height="400">
+
+
+<div id="thankmsg">
+    <p></p>
+</div>
+
+<div id="back-arrow">
+    <p>Are you sure you want to return back to home page!!</p>
+    <button id="yes">Yes</button>
+    <button id="no">No</button>
+</div>
+
+
+
+
+<script src = "contact.js"></script>
 </body>
 
+
 </html>
-
-
