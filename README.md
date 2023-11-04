@@ -52,7 +52,7 @@ contrasting the dark background display.
 
 ### Tic Tac Toe Game ####
 ### Design and created by Hana ###
-
+<Game functionality>
 -- Choose Halloween theme to design and style this gaming page
 -- the player will VS. Computer
 -- player gonna choose first to be X or O
@@ -60,6 +60,17 @@ contrasting the dark background display.
 -- Each round will be a winner for a that round and his score gonna be increase on Score display
 -- if there is a tie we will not add any points to any player
 -- after the 3rd round we will compare user score with computer score to decided who is the winner in the whole game
--- Enjoy playing this game and wish you luck :)
+-- Enjoy playing this game and wish you luck
+
+<Challenging>
+-- Dealing with popup messages was a bit frasrated in the begining but then start being much eaiser to style it and deal with it.
+-- Wants to have like a level for that game to make it normal or medium or hard but this need a lot of coding an AI so I keep it simple  :(
+
+<designing>
+-- took some GIF and PNG images from google make it much nicer and cooler
+-- Also my team helped with designing some images to use it as a thumnail for each game,Really appriciate thier offer :)
+
+<Resources>
+-- some functions didnt know that available in eventlistener so asked ChatGPT just to understand how it is used but didnt copy the code from it just take the idea how we can implemnted 
 
 
