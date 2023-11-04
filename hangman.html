@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0" />
+    <title>H.A.S.H Games</title>
+    <link rel="stylesheet" href="../game/hangman.css" />
+  </head>
+
+  <body>
+    <header class="head">
+      <span class="logo">H A S H<br />G A M E S</span>
+      <img
+        class="logo-img"
+        src="../img/logoo.png"
+        height="70px"
+        width="100px"
+      />
+      <nav>
+        <ul>
+          <li>
+            <a href="../main/main.html"><img class="icon" src="../img/home1.png" />Home</a>
+          </li>
+          <li class="game">
+            <a href="#"><img class="icon" src="../img/game1.png" />Games</a>
+            <ul class="game-dropdown">
+              <li><a href="../game/number_guesser.html">Number Guesser</a></li>
+              <li><a href="../game/rockps.html">Rock Paper Scissors</a></li>
+              <li><a href="../game/hangman.html">Hangman</a></li>
+              <li><a href="#">Blackjack</a></li>
+              <li><a href="../game/tictac.html">Tic Tac Toe</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="../contact/contact.html"
+              ><img class="icon" src="../img/contact1.png" />Contact</a
+            >
+          </li>
+          <li>
+            <a href="#"><img class="icon" src="../img/login1.png" />Login</a>
+          </li>
+          <li>
+            <a href="#"
+              ><img class="icon" src="../img/trophy1.png" />Leaderboard</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <div class="end">
+        <a href="../main/main.html" id="back-image" 
+          ><img class="back" src="../img/backarrow.png"
+        /></a>
+
+        <form class="search">
+          <label>Search: </label><br />
+          <input type="text" />
+        </form>
+      </div>
+    </header>
+
+    <!-- ********************* HANGMAN STARTS HERE ***************** -->
+    <main class="main">
+      <section>
+        
+        <div class="hangmanStages" id="hangmanID">
+          <img src="../img/0.png" alt="Stage0" />  
+        </div>
+        <div class="game-container">
+          <div class="word-display" id="wordDisplayID"></div>
+          <div class="alphabet" id="alphabetID"></div>
+        </div>
+        <button id="resetID">RESTART</button>
+      </section>
+
+      <section class="score-description">
+        <div class="game-status" id="gameStatusID">
+            <div id="gameStatusHeading"><h2>Game Status:</h2></div>
+            <div class="wrong-guesses" id="wrongGuessesID"></div>
+          </div>
+        <div class="game-rules" id="gameRulesID">
+          <h2>Rules of the Games:</h2>
+          <p>- The computer selects a secret word.</p>
+          <p>- The computer shows the length of the word with underscores.</p>
+          <p>- You guess one letter at a time.</p>
+          <p>- The computer reveals correct guesses;</p>
+          <p>- otherwise, it tracks incorrect guesses.</p>
+          <p>- There's a limit for 6 incorrect guesses.</p>
+          <p>- You win by guessing the word within the limit,</p>
+          <p>or you lose if you exceed it.</p>
+          <p>- Have fun trying to guess the word!</p>
+        </div>
+      </section>
+      <div id="popMessage">
+        <p></p>
+        <!-- <button>Play Again</button> -->
+      </div>
+
+      <div id="back-arrow">
+        <p>Are you sure you want to return back to home page!!</p>
+        <button id="yes">Yes</button>
+        <button id="no">No</button>
+      </div>
+    </main>
+    <script src="../game/hangman.js"></script>
+  </body>
+</html>

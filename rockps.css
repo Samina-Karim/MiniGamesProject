@@ -1,0 +1,444 @@
+/* Changed font to Arial Narrow */
+
+/* html{
+    height: 100%;
+} */
+
+body{
+    height: 100vh;
+    padding: 0px;
+    margin: 0px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: black ;/*#f4e022 */
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.head{
+    display: flex; /* Make list items appear in one line */
+    font-family:Verdana, Geneva, Tahoma, sans-serif; 
+    height: 15%;
+    background-image: url('../img/blue-bg.png') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    list-style-type: none;
+    align-items:center; /* Vertically center the elements */
+    justify-content:space-between; /* Create space between the span and the list items */
+
+}
+
+.logo{
+    padding-left: 10px;
+    font-size: 36px; /* Set the font size as desired */
+    font-weight: bold; /* Set the font weight as desired */
+    text-transform: uppercase; /* Convert the text to uppercase */
+    display: inline-block;
+    animation: lightUp 2s infinite; /*create animation named lightUp to create light up effect*/
+}
+
+.logo-img{
+    margin-left: 10px;
+}
+
+@keyframes lightUp {
+    0%, 100% {
+        color: #22c4ff; /* Color for the first letter */
+        text-shadow: 0 0 5px #22c4ff; /* Text shadow for the first letter */
+    }
+    25% {
+        color: rgb(233, 17, 136); /* Color for the second letter */
+        text-shadow: 0 0 5px rgb(233, 17, 136); /* Text shadow for the second letter */
+    }
+    50% {
+        color: purple; /* Color for the third letter */
+        text-shadow: 0 0 5px purple; /* Text shadow for the third letter */
+    }
+    75% {
+        color: white; /* Color for the fourth letter */
+        text-shadow: 0 0 5px white; /* Text shadow for the fourth letter */
+    }
+}
+
+nav{
+    text-align: center;
+    flex: 1; /* All items take an equal share of available space. */
+   
+}
+
+nav ul {
+    list-style: none; /* Remove default list bullets */
+    padding: 0; /* Remove default padding for the list */
+    margin: 0;
+    display: flex; /* Make list items appear in one line */
+    justify-content: center;
+    
+}
+nav ul li {
+    margin-right: 30px; /* Add spacing between list items */
+    justify-self: center;
+    padding-top: 50px;
+    position: relative;
+    margin-bottom: 35px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    padding-inline: 10px;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    color: white;
+    font-size: large;
+    align-items: center;
+    text-align: center;
+    border: 2px solid transparent;
+    transition: border-color,transform  ,box-shadow ; 
+    cursor: pointer;
+}
+
+nav ul li a:hover{
+    border-color: #800080;
+    border-radius: 20px;
+    transform: scale(1.1);
+    box-shadow: 0 0 20px purple;
+}
+
+.search
+{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    font-family:sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 10px;
+    text-align: center;
+    color: white;
+
+}
+
+.search input[type="text"] {
+    border: 2px solid black; /* Add a border */
+    border-radius: 15px; /* Set the border radius for rounded corners */
+    padding: 4px; /* Add padding for spacing inside the input box */
+    width: 150px; /* Set the desired width */
+    font-size: 16upx; /* Adjust the font size */
+}
+
+
+.end {
+    display: block;
+    
+}
+
+.back{
+    margin-left: 200px;
+}
+
+
+#back-arrow{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 40%; 
+    transform: translate(-30%, -30%);
+    background:rgb(117, 3, 193);
+    background-image: url("../img/question.gif");
+    background-size: initial;
+    /* background-repeat: no-repeat; */
+    padding: 50px;
+    border-radius: 20px;
+    border: 1px solid rgb(117, 3, 193);
+    text-align: center;
+    color:whitesmoke;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+#yes,#no{
+    background-color: white;
+    color: rgb(117, 3, 193);
+    height: 40px;
+    width: 60px;
+    margin: 20px;
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+#yes:hover, #no:hover{
+    background-color: aqua;
+}
+
+/* Initially hide the dropdown menu */
+.game-dropdown {
+    display: none;
+    position: absolute;
+    background-color:white;
+    list-style-type: none;
+    text-align: center; /* Center-align the text */
+    height: 40px;
+    box-sizing:border-box;
+    white-space: nowrap;/* Prevent line breaks in dropdown items */
+    right:50%; /* Align the dropdown to the right */
+    transform: translateX(50%);/* Center the dropdown */
+    padding-top: 10px;
+    z-index: 999; 
+    /* use z index to put it ontop of everything */
+    
+}
+
+/* When hovering over the game link, show the dropdown as a row */
+.game:hover .game-dropdown{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    border: 1px transparent;
+    border-radius: 20px;
+    /* margin-top: 10px; remove it to select from dropdown menu*/ 
+   
+}
+
+/* Optional: Add styles for the dropdown items */
+.game-dropdown li {
+    padding: 0; /* Add spacing between items */
+}
+
+.game-dropdown a{
+    color: black;
+    text-decoration: none;
+    align-items: center;
+
+    
+}
+
+/* Media query for mobile devices */
+@media (max-width: 600px) {
+    .nav li {
+        flex-direction: column; /* Stack elements horizontally on mobile */
+        
+    }
+    .search{
+        display: none;
+    }
+}
+
+
+
+/* My edited below */ /* Game styling */
+
+.main {
+    display: grid;
+    grid-template-columns: 3fr 1fr; /* Two columns, 2/3 for game-display, 1/3 for description and score */
+    grid-gap: 0; /* Add gap between the two sections */
+    padding: 0;
+    height: 100%;
+    margin: 0px;
+}
+
+#game_title, #game_title img{
+    display: flex;
+    justify-content: center;
+    border-radius: 350px;
+
+}
+
+.game-description{
+    height: 40%;
+    margin: 0;
+    /* border: 2px solid #d69b06;  */
+    overflow: auto; /* Add overflow property to create a scrollbar when content overflows */
+    border-bottom: 2px solid white;
+    
+}
+
+.score-display {
+    height: 60%;
+    margin: 0;
+    padding: 0;
+    border-top: 2px solid white;
+    color: white;
+    background-image: url("../img/bg1.png");
+    background-size:cover;
+}
+
+#D_Round, h3{
+    color:rgb(229, 35, 239);
+    display: flex;
+    justify-content: center;
+
+}
+
+.game-display, .score-description {
+    margin: 0;
+    height: 100%;
+    padding: 10px;
+    border: 2px solid white;
+    color: white;
+}
+
+
+.clweapon button{
+    padding: 20px 40px; /*padding inside button*/
+    background-color: rgb(228, 20, 173);
+    color: rgb(252, 247, 247);
+    font-weight: bold;
+    font-size: 20px;
+    border:0;
+    cursor:pointer;
+    border-radius:5px;
+}
+
+.clweapon button[value ="restart"]{
+    background-color: rgb(76, 244, 14);
+    color: black;
+    border-radius:20px;
+    padding: 10px 30px;
+    
+}
+
+.clweapon:hover{
+    /* border-color: #2eceda; */
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgb(70, 230, 239);
+    border-radius: 20px;
+}
+.clweapon button[value ="rock"]:hover{
+    
+    background-image: url("../img/rock_button.png");
+    background-size: cover;
+}
+
+.clweapon button[value ="paper"]:hover{
+    
+    background-image: url("../img/paper_button.png");
+    background-size: contain;
+}
+
+.clweapon button[value ="scissors"]:hover{
+    
+    background-image: url("../img/scissors_button.png");
+    background-size: cover;
+}
+
+#status{
+    font-weight: bold;
+}
+
+.weapon{
+    height: 100px;
+    width: 100px;
+}
+
+.game-display{
+    background-image:url("../img/bg1.png");
+    background-size:cover;
+    position: relative /*set relative so any child within game display area is not going beyond*/
+
+}
+
+.game-display #options{
+    box-sizing: border-box; /*should not push outside container, includes padding in elements total height/width*/
+    display: flex;
+    justify-content: center; /*centre horizontally*/
+    flex-direction: column;
+    align-items: center;
+    padding-top: 200px;
+}
+
+.game-display ul {
+    list-style: none;
+    display: flex; /* Display the list items horizontally */
+    flex-direction: row;
+    bottom: 0px; /*displays choices at bottom */
+}
+
+.game-display ul li{
+    list-style: none;
+    margin: 0 10px; /*spacing between list item*/
+    
+}
+
+.playfield {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    height: 10%; /* adjust the height */
+}
+
+.playfield #outcome {
+    /* displays text of round outcome */
+    display: inline-flex;
+    position: relative;
+    align-items: center; 
+    justify-content: center; /*centre horizontally*/
+    top: 50px;
+    padding: 20px 20px; /*padding inside*/
+    color: rgb(252, 247, 247);
+    font-weight: bold;
+    font-size: 20px;
+    border:0;
+}
+
+.playfield #user_choice {
+    /* image for user choice will show on left side */
+    position:absolute;
+    display: flex;
+    align-items: center; /*vertically center */
+    left: 100px;
+    padding-top: 200px; /*make it go down to middle*/
+}
+
+
+.playfield #comp_choice {
+    /* image for computer choice will show on right side */
+    display: flex;
+    position: absolute;
+    align-items: center; /*vertically center */
+    right: 100px;
+    padding-top: 200px; /*make it go down to middle*/
+}
+
+
+/* Popup design */
+
+#pop_over {
+    display:none;
+    z-index: 999; /*set very high z index so it goes ontop */
+    /* left: 50%; */
+    position:absolute;
+    /* display: flex when showing popup */ 
+    /*background-color: rgba(29, 179, 41, 0.536); /* Semi-transparent black background */
+    height:70%;
+    width:100%;
+    color: black;
+    justify-content: center; /*centre horizontally*/
+    align-items: center; /*vertically center */
+    border-radius: 20px;
+}
+
+#pop_m {
+    /* display: flex; */
+    
+    background-color: white;
+    padding: 20px;
+    
+
+}
+
+ #reset_pop button{
+
+    background-color: rgb(246, 5, 61);
+    color: rgb(255, 250, 250);
+    border-radius:20px;
+    padding: 10px 30px;
+    cursor: pointer;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: medium;
+    border: none;
+}
+

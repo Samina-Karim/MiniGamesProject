@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width", initial-scale ="1.0">
+
+    <title> Rock, Paper, Scissors </title>
+    
+    <link rel = "stylesheet" href="../game/rockps.css">
+</head>
+
+<body>
+
+<!-- Header navigation Bar -->
+    <header class="head">
+        <span class="logo">H A S H<br>G A M E S</span>
+        <img class="logo-img" src="../img/logoo.png" height="70px" width="100px">
+        <nav>
+            <ul>
+                <li>
+                    <a href="../main/main.html"><img class="icon" src="../img/home1.png">Home</a>
+                </li>
+                <li class="game">
+                    <a href="#"><img class="icon" src="../img/game1.png">Games</a>
+                    <ul class="game-dropdown">
+                        <li><a href="../game/Number_guesser.html">Number Guesser</a></li>
+                        <li><a href="../game/rockps.html">Rock Paper Scissors</a></li>
+                        <li><a href="../game/hangman.html">Hangman</a></li>
+                        <li><a href="#">Blackjack</a></li>
+                        <li><a href="../game/tictac.html">Tic Tac Toe</a></li>
+                    </ul> 
+                </li>
+                <li>
+                    <a href="../contact/contact.html"><img class="icon" src="../img/contact1.png">Contact</a>
+                </li>
+                <li><a href="#"><img class="icon" src="../img/login1.png">Login</a></li>
+                <li><a href="#"><img class="icon" src="../img/trophy1.png">Leaderboard</a></li>
+            </ul>
+        </nav>
+
+        <div class="end">
+        
+            <a href="../main/main.html" id="back-image"><img class="back" id ="back_again" src="../img/backarrow.png" ></a>
+    
+            <form class="search">
+                <label >Search: </label><br>
+                <input type="text">
+            </form>
+    
+            </div>
+</header>
+
+
+<!-- Main Area -->
+<main class="main">
+    
+    <section class="game-display">
+        <p id = "game_title"><img src = "../img/rockps_title.gif" width="300px" height="100px"></p>
+
+        <!-- Popup for when game ends, overlay for covering background -->
+        <div id = "pop_over"> 
+            <div id = "pop_m">
+                <p>Game Over</p>
+            </div>
+            <section id = "reset_pop">
+                <button value="r_pop" type ="button">Reset</button>
+            </section>
+        </div> 
+
+        <!-- Area where user and computer choice will display -->
+        <div class = "playfield">
+            <!-- where user image will display -->
+            <section id = "user_choice">
+            </section>
+
+            <!-- where match outcome will display -->
+            <section id = "outcome">
+            </section>
+
+            <!-- where computer image will display -->
+            <section id = "comp_choice">
+            </section>
+        </div>
+
+        
+
+        <div id = "options">
+            <!-- Button options for user to choose from -->
+            <p id ="status">CHOOSE YOUR WEAPON</p> 
+            <ul>
+                <li> <section class = "clweapon">
+                     
+                    <button value="rock" type ="button">ROCK </button>
+                </section></li>
+
+                <li><section class = "clweapon">
+                    <button value="paper" type ="button">PAPER</button>
+                </section></li>
+
+                <li> <section class = "clweapon">
+                    <button value="scissors" type ="button">SCISSORS</button>    
+                </section></li>
+
+            </ul>
+
+            <section class = "clweapon">
+                <button value="restart" type ="button">Restart</button>
+            </section>
+            
+        </div>
+        
+       
+    </section>
+
+    <!--Score Display & Description-->
+    <section class="score-description">
+        <section class="game-description">
+            <h3>GAME DESCRIPTION</h3>
+            <p>Play against the ultimate computer by clicking on either rock, paper, or scissors button.</p>
+            <p>Once you have made your selection, the computer will randomly (yes randomly) choose one of those 3 options.</p>
+            <p>The winner will be decided based on which option beats the other</p>
+            <p>Rock beats scissors</p>
+            <p>Paper beats rock</p>
+            <p>Scissors beats paper</p>
+            <p>Whoever wins the most of 5 rounds is the champion of the world! This virtual world....</p>
+        </section>
+        
+        <section class="score-display">
+            <!--Below will change text as game starts-->
+            <h3 id ="D_Round"> ROUND 1 </h3> 
+            <p id = "D_Userscore">You: </p>
+            <p id = "D_Cscore">Computer: </p> 
+        </section>
+    </section>
+
+    <div id="back-arrow">
+        <p>Are you sure you want to return back to home page!!</p>
+        <button id="yes">Yes</button>
+        <button id="no">No</button>
+    </div>
+</main>
+
+
+    <script src = "../game/rockps.js"></script>
+</body>
+</html>

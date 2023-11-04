@@ -1,0 +1,415 @@
+html{
+    height: 100%;
+}
+
+body{
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: black ;/*#f4e022 */
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.head{
+    display: flex; /* Make list items appear in one line */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 15%;
+    background-image: url('../img/blue-bg.png') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    list-style-type: none;
+    align-items:center; /* Vertically center the elements */
+    justify-content:space-between; /* Create space between the span and the list items */
+
+}
+
+.logo{
+    padding-left: 10px;
+    font-size: 36px; /* Set the font size as desired */
+    font-weight: bold; /* Set the font weight as desired */
+    text-transform: uppercase; /* Convert the text to uppercase */
+    display: inline-block;
+    animation: lightUp 2s infinite; /*create animation named lightUp to create light up effect*/
+}
+
+.logo-img{
+    margin-left: 10px;
+}
+
+@keyframes lightUp {
+    0%, 100% {
+        color: #22c4ff; /* Color for the first letter */
+        text-shadow: 0 0 5px #22c4ff; /* Text shadow for the first letter */
+    }
+    25% {
+        color: rgb(233, 17, 136); /* Color for the second letter */
+        text-shadow: 0 0 5px rgb(233, 17, 136); /* Text shadow for the second letter */
+    }
+    50% {
+        color: purple; /* Color for the third letter */
+        text-shadow: 0 0 5px purple; /* Text shadow for the third letter */
+    }
+    75% {
+        color: white; /* Color for the fourth letter */
+        text-shadow: 0 0 5px white; /* Text shadow for the fourth letter */
+    }
+}
+
+
+nav{
+    text-align: center;
+    flex: 1; /* All items take an equal share of available space. */
+
+}
+
+nav ul {
+    list-style: none; /* Remove default list bullets */
+    padding: 0; /* Remove default padding for the list */
+    margin: 0;
+    display: flex; /* Make list items appear in one line */
+    justify-content: center;
+    
+}
+nav ul li {
+    margin-right: 30px; /* Add spacing between list items */
+    justify-self: center;
+    padding-top: 50px;
+    position: relative;
+    margin-bottom: 35px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    padding-inline: 10px;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    color: white;
+    font-size: large;
+    align-items: center;
+    text-align: center;
+    border: 2px solid transparent;
+    transition: border-color,transform  ,box-shadow ; 
+    cursor: pointer;
+}
+
+nav ul li a:hover{
+    border-color: #800080;
+    border-radius: 20px;
+    transform: scale(1.1);
+    box-shadow: 0 0 20px purple;
+}
+
+.end {
+    display: block;
+    
+}
+
+.back{
+    margin-left: 200px;
+}
+
+#back-arrow{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 40%; 
+    transform: translate(-30%, -30%);
+    background:rgb(117, 3, 193);
+    background-image: url("../img/question.gif");
+    background-size: initial;
+    /* background-repeat: no-repeat; */
+    padding: 50px;
+    border-radius: 20px;
+    border: 1px solid rgb(117, 3, 193);
+    text-align: center;
+    color:whitesmoke;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+#yes,#no{
+    background-color: white;
+    color: rgb(117, 3, 193);
+    height: 40px;
+    width: 60px;
+    margin: 20px;
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+#yes:hover, #no:hover{
+    background-color: aqua;
+}
+.search
+{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 10px;
+    text-align: center;
+    color: white;
+
+}
+
+.search input[type="text"] {
+    border: 2px solid black; /* Add a border */
+    border-radius: 15px; /* Set the border radius for rounded corners */
+    padding: 4px; /* Add padding for spacing inside the input box */
+    width: 150px; /* Set the desired width */
+    font-size: 16px; /* Adjust the font size */
+}
+
+/* Initially hide the dropdown menu */
+.game-dropdown {
+    display: none;
+    position: absolute;
+    background-color:white;
+    list-style-type: none;
+    text-align: center; /* Center-align the text */
+    height: 40px;
+    box-sizing:border-box;
+    white-space: nowrap;/* Prevent line breaks in dropdown items */
+    right:50%; /* Align the dropdown to the middle */
+    transform: translateX(50%);/* Center the dropdown */
+    padding-top: 10px;
+    
+}
+
+/* When hovering over the game link, show the dropdown as a row */
+.game:hover .game-dropdown{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    border: 1px transparent;
+    border-radius: 20px;
+   
+}
+
+/* Optional: Add styles for the dropdown items */
+.game-dropdown li {
+    padding: 0; /* Add spacing between items */
+}
+
+.game-dropdown a{
+    color: black;
+    text-decoration: none;
+    align-items: center;
+
+    
+}
+
+/* Style for the container holding the boxes */
+.main{
+    /* display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr; */
+    /* gap: 10px; */
+    height: 90%; /* Adjust the desired height */
+    
+}
+
+/* Style for each box */
+.rock-p {
+    box-shadow: 0 0 15px black; /* Yellow shadow */
+    /* border: 5px solid purple;  */
+    border-radius: 15%;
+    height: 100%; /* Take the height of the main container */
+    transition: transform 0.3s; /* Add transition on hover */
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    gap:0px;
+    width: 100%;
+    text-decoration: none;
+    background-image: url(../img/RockPaperScissor.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.hangman {
+    box-shadow: 0 0 15px rgb(0, 0, 0); /* Yellow shadow */
+    /* border: 5px solid purple;  */
+    border-radius: 15%;
+    height: 100%; /* Take the height of the main container */
+    transition: transform 0.3s; /* Add transition on hover */
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    gap:0px;
+    width: 100%;
+    text-decoration: none;
+    background-image: url(../img/Hangman-Thumbnail.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.xo {
+    box-shadow: 0 0 15px black; /* Yellow shadow */
+    /* border: 5px solid purple;  */
+    border-radius: 15%;
+    height: 100%; /* Take the height of the main container */
+    transition: transform 0.3s; /* Add transition on hover */
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    gap:0px;
+    width: 100%;
+    text-decoration: none;
+    background-image: url(../img/TicTacToe-Thumbnail.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Hover effect */
+.num-g:hover ,.rock-p:hover,.hangman:hover,.jack:hover,.xo:hover{
+    transform: scale(1.08); /* Enlarge the box on hover */
+}
+
+
+
+/* Media query for mobile devices */
+@media (max-width: 600px) {
+    .nav li {
+        flex-direction: column; /* Stack elements horizontally on mobile */
+        
+    }
+    .search{
+        display: none;
+    }
+}
+
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background: linear-gradient(
+        to right,
+        #aa0808,
+        #1115e2
+    );
+}
+
+
+
+h3{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+input[type=text]{
+   width: 200px;
+   font-weight: 600;
+   color: #663399;
+   padding: 20px 0;
+   text-align:center;
+   margin-top: 30px;
+   border-radius: 5px;
+   border: 2px solid #bb02b2;  
+   font-size: 32px;
+}
+
+button{
+    width:160px;
+    padding: 15px 0;
+    border-radius: 5px;
+    background-color: #663399;
+    color: #ffffff;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom:30px;
+
+}
+
+p{
+    font-weight: 400;
+}
+
+
+
+
+.instruction{
+   font-size: 16px;
+   color: red;
+    
+}
+.container1 {
+    /* width: 30%; */
+    /* min-width: 580px; */
+
+    /* top: 70%; Center vertically */
+    /* transform: translate(-50%, -50%); Center both horizontally and vertically */
+    background-color: #e2d9e4 ; /* Background color */
+    padding: 50px 10px;
+    display: grid;
+    justify-items: center;
+    font-family: 'Poppins', sans-serif;
+    width: 700px;
+    height: 400px;
+    margin-left: 30%;
+    border-radius: 20px;
+    
+}
+
+
+
+.container2{
+  
+    /* top: 300px; 
+    right: 10px;  */
+    background-color: #031552;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    width: 500px;
+    /* max-width: 350; */
+    height: 300px;
+    font-size: 16px;
+    overflow: auto;  
+    margin-right:40px;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+
+
+.scoreboard{
+    font-size: 16px;
+}
+
+#Welcome{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 35px;
+    font-weight: bolder;
+    text-align: center;
+    position:relative;
+}
+
+.game_body{
+    display:flex;
+    flex-direction: row;
+    padding: 0px;
+    margin: 0px;
+    height: 80vh;
+    justify-content: space-between;
+    margin-top: 50px;
+
+
+}

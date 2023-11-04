@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NumberGusser</title>
+    <link rel="stylesheet" type="text/css" href="./Number_guesser.css">
+</head>
+<body>
+    
+    <header class="head">
+        <span class="logo">H A S H<br>G A M E S</span>
+        <img class="logo-img" src="../img/logoo.png" height="70px" width="100px">
+        <nav>
+            <ul>
+                <li>
+                    <a href="../main/main.html"><img class="icon" src="../img/home1.png">Home</a>
+                </li>
+                <li class="game">
+                    <a href="#"><img class="icon" src="../img/game1.png">Games</a>
+                    <ul class="game-dropdown">
+                        <li><a href="../game/Number_guesser.html">Number Guesser</a></li>
+                        <li><a href="../game/rockps.html">Rock Paper Scissors</a></li>
+                        <li><a href="../game/hangman.html">Hangman</a></li>
+                        <li><a href="#">Blackjack</a></li>
+                        <li><a href="../game/tictac.html">Tic Tac Toe</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../contact/contact.html"><img class="icon" src="../img/contact1.png">Contact</a>
+                </li>
+                <li><a href="#"><img class="icon" src="../img/login1.png">Login</a></li>
+                <li><a href="#"><img class="icon" src="../img/trophy1.png">Leaderboard</a></li>
+            </ul>
+        </nav>
+
+        <div class="end">
+        
+            <a href="../main/main.html" id="back-image" ><img class="back"  src="../img/backarrow.png" ></a>
+
+            <form class="search">
+                <label >Search: </label><br>
+                <input type="text">
+            </form>
+
+        </div>
+
+    </header>
+        
+
+    <main>
+        <h1 id="Welcome"> WELCOME TO THE NUMBER GUESS GAME</h1>
+        <Section class="game_body"> 
+            <div class = "container1">
+                <h3> I am thinking of a number between 1-50</h3>
+                <h3>Can you guess it?</h3>
+        
+                <input type="text" id="guess" placeholder="Num"><br>
+                <button onclick="play()" id="my_btn">GUESS</button> 
+                <p id="message1" >No. of Guesses: </p>
+                <p id="message2" >Guessed numbers are: None </p>
+                <p id="message3" >You have guessed so far: </p>
+            </div>
+            
+            <div class = "container2">
+                <h1  class = "instruction">Instruction: </h1><br>
+                <p> To Play the Number Guess game: </p><br>
+                <p> 1. Choose a number between 1 to 50.</p><br>
+                <p> 2. Once you select a number, It will tell you either hot or cold</p><br>
+                <p> 3. If you get the "hot" message below, that means your number is higher than the computer guess</p><br>
+                <p> 4. If you get the "cold" message below, that means your number is lower than the computer guess</p><br>
+                <p> 5. Guess the number correctly and you win!</p><br>
+
+            </div>
+        </section>
+        <div id="back-arrow">
+            <p>Are you sure you want to return back to home page!!</p>
+            <button id="yes">Yes</button>
+            <button id="no">No</button>
+        </div>
+    </main>
+
+    <script src="./Number_guesser.js"></script>
+</body>
+</html>
