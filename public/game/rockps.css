@@ -269,19 +269,19 @@ nav ul li a:hover{
 }
 .clweapon button[value ="rock"]:hover{
     
-    background-image: url("img/rock_button.png");
+    background-image: url("../img/rock_button.png");
     background-size: cover;
 }
 
 .clweapon button[value ="paper"]:hover{
     
-    background-image: url("img/paper_button.png");
+    background-image: url("../img/paper_button.png");
     background-size: contain;
 }
 
 .clweapon button[value ="scissors"]:hover{
     
-    background-image: url("img/scissors_button.png");
+    background-image: url("../img/scissors_button.png");
     background-size: cover;
 }
 
@@ -295,7 +295,7 @@ nav ul li a:hover{
 }
 
 .game-display{
-    background-image:url("img/bg1.png");
+    background-image:url("../img/bg1.png");
     background-size:cover;
     position: relative /*set relative so any child within game display area is not going beyond*/
 
@@ -380,6 +380,7 @@ nav ul li a:hover{
     color: black;
     justify-content: center; /*centre horizontally*/
     align-items: center; /*vertically center */
+    border-radius: 20px;
 }
 
 #pop_m {
