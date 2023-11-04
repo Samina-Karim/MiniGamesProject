@@ -45,3 +45,33 @@ function play() {
         msg3.textContent = 'Guessed numbers are: ' + guessed_nums;
     }
 }
+
+
+
+/////////////////// Back arrow setup ////////////////
+
+const backButton = document.getElementById('back-image');
+const popupBack = document.getElementById('back-arrow');
+const yes = document.getElementById("yes");
+const no = document.getElementById("no");
+
+backButton.addEventListener('click',(e)=>{
+    e.preventDefault();
+
+    console.log(popupBack);
+
+    // Show popup msg
+    popupBack.style.display = "block";
+
+    //handle yes button
+    yes.addEventListener("click",()=>{
+        window.location.href = backButton.getAttribute('href'); // Redirect to the link
+    });
+
+    //handle no button
+    no.addEventListener("click",()=>{
+        popupBack.style.display = 'none';
+    });
+});
+
+

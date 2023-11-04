@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" , initial-scale="1.0" />
     <title>H.A.S.H Games</title>
-    <link rel="stylesheet" href="new.css" />
+    <link rel="stylesheet" href="../game/hangman.css" />
   </head>
 
   <body>
@@ -19,7 +19,7 @@
       <nav>
         <ul>
           <li>
-            <a href="#"><img class="icon" src="../img/home1.png" />Home</a>
+            <a href="../main/main.html"><img class="icon" src="../img/home1.png" />Home</a>
           </li>
           <li class="game">
             <a href="#"><img class="icon" src="../img/game1.png" />Games</a>
@@ -48,7 +48,7 @@
       </nav>
 
       <div class="end">
-        <a href="../main/main.html"
+        <a href="../main/main.html" id="back-image" 
           ><img class="back" src="../img/backarrow.png"
         /></a>
 
@@ -59,12 +59,12 @@
       </div>
     </header>
 
-    /********************* HANGMAN STARTS HERE *****************/
+    <!-- ********************* HANGMAN STARTS HERE ***************** -->
     <main class="main">
       <section>
         
         <div class="hangmanStages" id="hangmanID">
-          <img src="img/0.png" alt="Stage0" />  
+          <img src="../img/0.png" alt="Stage0" />  
         </div>
         <div class="game-container">
           <div class="word-display" id="wordDisplayID"></div>
@@ -95,7 +95,13 @@
         <p></p>
         <!-- <button>Play Again</button> -->
       </div>
+
+      <div id="back-arrow">
+        <p>Are you sure you want to return back to home page!!</p>
+        <button id="yes">Yes</button>
+        <button id="no">No</button>
+      </div>
     </main>
-    <script src="new.js"></script>
+    <script src="../game/hangman.js"></script>
   </body>
 </html>

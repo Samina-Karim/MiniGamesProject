@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>game-template</title>
-    <link rel="stylesheet" type="text/css" href="Number_guesser.css">
+    <title>NumberGusser</title>
+    <link rel="stylesheet" type="text/css" href="./Number_guesser.css">
 </head>
 <body>
+    
     <header class="head">
         <span class="logo">H A S H<br>G A M E S</span>
         <img class="logo-img" src="../img/logoo.png" height="70px" width="100px">
@@ -20,7 +21,7 @@
                     <ul class="game-dropdown">
                         <li><a href="../game/Number_guesser.html">Number Guesser</a></li>
                         <li><a href="../game/rockps.html">Rock Paper Scissors</a></li>
-                        <li><a href="../game/game.html">Hangman</a></li>
+                        <li><a href="../game/hangman.html">Hangman</a></li>
                         <li><a href="#">Blackjack</a></li>
                         <li><a href="../game/tictac.html">Tic Tac Toe</a></li>
                     </ul>
@@ -35,14 +36,14 @@
 
         <div class="end">
         
-            <a href="../main/main.html"><img class="back" src="../img/backarrow.png" ></a>
-    
+            <a href="../main/main.html" id="back-image" ><img class="back"  src="../img/backarrow.png" ></a>
+
             <form class="search">
                 <label >Search: </label><br>
                 <input type="text">
             </form>
-    
-            </div>
+
+        </div>
 
     </header>
         
@@ -72,15 +73,13 @@
 
             </div>
         </section>
+        <div id="back-arrow">
+            <p>Are you sure you want to return back to home page!!</p>
+            <button id="yes">Yes</button>
+            <button id="no">No</button>
+        </div>
     </main>
 
-    <footer class="foot"> </footer>
-    <!-- <script src="script11.js"></script>
-    <script src="./mainjs.js"></script> -->
-<<<<<<< HEAD
-    <script src="Number_guesser.js"></script>
-=======
-    <script src="../game/Number_guesser.js"></script>
->>>>>>> 8bcc8c73d896e2de5d191d63444ef69a4a09e1c6
+    <script src="./Number_guesser.js"></script>
 </body>
 </html>

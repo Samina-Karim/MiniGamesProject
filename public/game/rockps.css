@@ -136,6 +136,41 @@ nav ul li a:hover{
     margin-left: 200px;
 }
 
+
+#back-arrow{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 40%; 
+    transform: translate(-30%, -30%);
+    background:rgb(117, 3, 193);
+    background-image: url("../img/question.gif");
+    background-size: initial;
+    /* background-repeat: no-repeat; */
+    padding: 50px;
+    border-radius: 20px;
+    border: 1px solid rgb(117, 3, 193);
+    text-align: center;
+    color:whitesmoke;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+#yes,#no{
+    background-color: white;
+    color: rgb(117, 3, 193);
+    height: 40px;
+    width: 60px;
+    margin: 20px;
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+#yes:hover, #no:hover{
+    background-color: aqua;
+}
+
 /* Initially hide the dropdown menu */
 .game-dropdown {
     display: none;

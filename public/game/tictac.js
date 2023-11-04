@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", () =>{
     });
 });
 
+
 ////////////// Game Start ////////////////////////
 
 // Initiate for popout msg
