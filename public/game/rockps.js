@@ -69,13 +69,13 @@ function field_image(weapon_choice, player){
     //create image element
     var display_choice = document.createElement("img");
     if (weapon_choice =="rock"){
-        display_choice.setAttribute("src", "img/rock.png");
+        display_choice.setAttribute("src", "../img/rock.png");
     }
     else if (weapon_choice == "paper"){
-        display_choice.setAttribute("src", "img/paper.png");
+        display_choice.setAttribute("src", "../img/paper.png");
     }
     else if (weapon_choice == "scissors"){
-        display_choice.setAttribute("src", "img/scissors.png");
+        display_choice.setAttribute("src", "../img/scissors.png");
     }
 
     //set size of image
@@ -163,7 +163,7 @@ function final(U_score, C_score){
     //alert(`Final Score: You: ${U_score}, Computer: ${C_score}`);
     if (U_score>C_score){
         document.getElementById("pop_m").textContent = "Congrats, you won! We've locked onto your location. Don't worry, we won't release the bees... yet";
-        document.getElementById("pop_over").style.backgroundImage="url('img/win-bg.gif')";
+        document.getElementById("pop_over").style.backgroundImage="url('../img/win-bg.gif')";
         document.getElementById("pop_over").style.backgroundSize="cover";
         //document.getElementById("outcome").textContent= "Winner!";
     }
