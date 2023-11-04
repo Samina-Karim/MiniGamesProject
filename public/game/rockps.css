@@ -19,7 +19,7 @@ body{
     display: flex; /* Make list items appear in one line */
     font-family:'Arial Narrow'; 
     height: 15%;
-    background-image: url('img/blue-bg.png') ;
+    background-image: url('../img/blue-bg.png') ;
     background-repeat: no-repeat;
     background-size: cover;
     list-style-type: none;
@@ -222,7 +222,7 @@ nav ul li a:hover{
     padding: 0;
     border-top: 2px solid white;
     color: white;
-    background-image: url("img/bg1.png");
+    background-image: url("../img/bg1.png");
     background-size:cover;
 }
 
