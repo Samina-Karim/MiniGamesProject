@@ -17,9 +17,9 @@ body{
 
 .head{
     display: flex; /* Make list items appear in one line */
-    font-family:'Arial Narrow'; 
+    font-family:Verdana, Geneva, Tahoma, sans-serif; 
     height: 15%;
-    background-image: url('img/blue-bg.png') ;
+    background-image: url('../img/blue-bg.png') ;
     background-repeat: no-repeat;
     background-size: cover;
     list-style-type: none;
