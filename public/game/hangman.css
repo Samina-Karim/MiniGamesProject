@@ -229,7 +229,7 @@ nav ul li a:hover{
     grid-gap: 0; /* Add gap between the two sections */
     padding: 0;
     height: 100%;
-    /* margin: 5px; */
+    margin: 5px; 
     background-image:url("../img/hangman-theme.png");
     background-size: 100% 100% ;
     background-repeat: no-repeat;
