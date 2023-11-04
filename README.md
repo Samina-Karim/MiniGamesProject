@@ -1,9 +1,10 @@
 # MiniGamesProject
 CIC: MiniGamesProject
 
-Gaming website title : Hash
+Gaming website title : HASH Games
+-HASH name inspired by our group member's first name initials
 
-group member:
+Group Members:
 1.Samina
 2.Awaab
 3.Haider
@@ -13,9 +14,7 @@ group member:
 ### Number Guesser Game ####
 ### Design and created by Haider ###
 
-Here's your text with spelling and grammar corrections:
-
-"I contributed to the 'MiniGamesProject', specifically focusing on the 'Number Guesser' game, a fun number prediction game where the user has to try to guess the number. As a developer, I implemented the following features:
+I contributed to the 'MiniGamesProject', specifically focusing on the 'Number Guesser' game, a fun number prediction game where the user has to try to guess the number. As a developer, I implemented the following features:
 
 1. I allowed the user to guess a number.
 2. I allowed the user to receive hints based on the number they chose.
@@ -28,7 +27,7 @@ Technologies and Tools I used include HTML, CSS, and JavaScript, along with the 
 I hope that you enjoy this number guesser game with your friends and family!
 
 Note: Here is the link to the YouTube video I used as a reference:
-     1.  [YouTube Video Reference](https://www.youtube.com/watch?v=gPbpGWFl8mQ)"
+     1.  [YouTube Video Reference](https://www.youtube.com/watch?v=gPbpGWFl8mQ)
 
 
 ### Rock Paper Scissor Game ####
