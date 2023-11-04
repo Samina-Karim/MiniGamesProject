@@ -23,6 +23,13 @@ Here's your text with spelling and grammar corrections:
 4. Designed an easy-to-use interface with a hot-cold theme that matches the aesthetics of the website.
 
 Challenges I faced included ensuring that my text does not go over the designated container. To address this, I referenced previous lecture notes and YouTube tutorials to set the CSS attributes.
+Technologies and Tools I used include HTML, CSS, and JavaScript, along with the assistance of Git, GitHub, YouTube, ChatGPT, and VS Code.
+
+I hope that you enjoy this number guesser game with your friends and family!
+
+Note: Here is the link to the YouTube video I used as a reference:
+     1.  [YouTube Video Reference](https://www.youtube.com/watch?v=gPbpGWFl8mQ)"
+
 
 ### Rock Paper Scissor Game ####
 ### Design and created by Awaab ###
@@ -56,9 +63,3 @@ contrasting the dark background display.
 -- Enjoy playing this game and wish you luck :)
 
 
-Technologies and Tools I used include HTML, CSS, and JavaScript, along with the assistance of Git, GitHub, YouTube, ChatGPT, and VS Code.
-
-I hope that you enjoy this number guesser game with your friends and family!
-
-Note: Here is the link to the YouTube video I used as a reference:
-     1.  [YouTube Video Reference](https://www.youtube.com/watch?v=gPbpGWFl8mQ)"
