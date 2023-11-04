@@ -182,6 +182,7 @@ nav ul li a:hover{
     right:50%; /* Align the dropdown to the right */
     transform: translateX(50%);/* Center the dropdown */
     padding-top: 10px;
+    z-index:999;
     
 }
 
