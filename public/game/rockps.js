@@ -151,7 +151,9 @@ function roundscore(Uscore, Cscore,ro){
 }
 
 function show_popup(){
-    document.getElementById("pop_over").style.display = "flex";
+    setTimeout(function (){
+        document.getElementById("pop_over").style.display = "flex";
+    }, 5000);
 }
 
 function hide_popup(){
@@ -251,7 +253,7 @@ started.forEach(function(elem){
             rounds = roundscore(uscore, cscore, rounds);
             if (rounds ===6){ //check if rounds = 5 then end
                 //show popup
-                setTimeout(show_popup(),5000);
+                show_popup();
 
                 final(uscore, cscore); //print final score
                 //ask if user wants to play again
