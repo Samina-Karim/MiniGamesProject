@@ -305,7 +305,7 @@ function resetGame() {
             cell.style.cursor = 'pointer'; // Make cells clickable
         });
         document.querySelector('.result').innerHTML = 'Game is running!!!!!';
-    }, 2000); // Adjust the delay time as needed
+    }, 1000); // Adjust the delay time as needed
 
     
 
