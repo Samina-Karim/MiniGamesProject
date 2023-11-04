@@ -160,11 +160,13 @@ function hide_popup(){
 
 // A function that prints out the final score
 function final(U_score, C_score){
-    //alert(`Final Score: You: ${U_score}, Computer: ${C_score}`);
+
+    document.getElementById("pop_over").style.backgroundImage="url('../img/win-bg.gif')";
+    document.getElementById("pop_over").style.backgroundSize="cover";
+
     if (U_score>C_score){
         document.getElementById("pop_m").textContent = "Congrats, you won! We've locked onto your location. Don't worry, we won't release the bees... yet";
-        document.getElementById("pop_over").style.backgroundImage="url('../img/win-bg.gif')";
-        document.getElementById("pop_over").style.backgroundSize="cover";
+        
         //document.getElementById("outcome").textContent= "Winner!";
     }
     else if (U_score<C_score){
@@ -281,7 +283,6 @@ pop_click.addEventListener("click", function(){
     rounds = 1;
     uscore = 0;
     cscore = 0;
-
 
 });
 
