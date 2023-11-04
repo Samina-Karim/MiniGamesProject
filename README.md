@@ -5,9 +5,9 @@ Gaming website title : HASH Games
 -HASH name inspired by our group member's first name initials
 
 Group Members:
-1.Samina
+1.Samina Karim
 2.Awaab
-3.Haider
+3.Syed Haider Mir
 4.Hana Samara
 
 
@@ -47,7 +47,48 @@ contrasting the dark background display.
      -Game Title was specially designed in Canva platform
 
 ### Hangman Game ####
-### Design and created by Samina ###
+### Design and created by Samina Karim ###
+# Hangman Game
+
+## Description
+
+The Hangman Game is a fun and interactive web-based game implemented using JavaScript, CSS, and HTML. It provides an engaging experience for players of all ages, with a focus on guessing words related to fruits (hint, hint!).
+
+### Game Display Elements:
+
+1. **Hangman Figure Display:** This visual element showcases the progression of incorrect guesses.
+
+2. **Hidden Secret Word Display:** Displays blanks representing the letters of the secret word.
+
+3. **Clickable Keyboard:** Allows users to select one alphabet at a time for guessing.
+
+4. **Game Status Display:** Provides information on the number of incorrect guesses and the final game outcome.
+
+5. **Game Description Display:** Offers a brief overview of the game rules and objectives.
+
+6. **Restart Button:** Allows players to start a new game with a fresh word.
+
+7. **Animated Popup Display:** Provides an entertaining visual cue to indicate whether the player has won or lost.
+
+## Features
+
+- Random word selection from a predefined list of words related to fruits.
+- Display of current progress, including incorrect guessed letters.
+- Dynamic updating of the hangman figure to reflect incorrect guesses.
+- Clear end game conditions for both winning and losing.
+
+## Upcoming Features
+
+- **Hint System:** A feature in development that will provide helpful clues to players.
+
+## Usage
+
+This game is designed for players of all ages who enjoy a word-guessing challenge, especially those with an affinity for fruits!
+
+## Acknowledgement
+
+This project owes its success to the invaluable support and guidance of CIC instructors, the collaborative effort of my teammates in its final touches, some assistance from ChatGPT in the keyboard handling function, and, most importantly, my own logical thinking and understanding of the game. It was fun designing the game cards, however, the CSS part was the most frustrating part which I finally figured out with the asistance of the instructors.  Thank you all!
+
 
 ### Tic Tac Toe Game ####
 ### Design and created by Hana ###
