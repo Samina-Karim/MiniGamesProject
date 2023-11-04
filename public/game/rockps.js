@@ -289,8 +289,10 @@ pop_click.addEventListener("click", function(){
 });
 
 
-const back_b = document.getElementById("back_again");
-//back_again.addEventListener("click, function"())
+// const back_b = document.getElementById("back_again");
+// back_again.addEventListener("click", function(){
+//     //display a popup saying if you want to exit the game
+// })
 
 
 
