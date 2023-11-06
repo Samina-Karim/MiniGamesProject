@@ -91,9 +91,9 @@ xImage.addEventListener("click", () => {
 // user choose option O
 
 oImage.addEventListener("click", () => {
-    playerChoice = 'O';
+    playerChoice = 'o';
     cpuChoice = 'X';
-    currentPlayer = 'O';
+    currentPlayer = 'o';
     choicePopup.style.display = "none";
 
     // Initialize the game board
