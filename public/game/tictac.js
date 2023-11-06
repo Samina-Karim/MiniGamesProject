@@ -267,9 +267,9 @@ function displayRoundResultPopup(round)
     roundResultPopup.style.display = "block";
     if(roundResultPopup.innerHTML == 'It\'s a tie!')
     {
-        cells[winnerIndex[0]].style.backgroundColor = "transparent";
-        cells[winnerIndex[1]].style.backgroundColor = "transparent";
-        cells[winnerIndex[2]].style.backgroundColor = "transparent";
+        // cells[winnerIndex[0]].style.backgroundColor = "transparent";
+        // cells[winnerIndex[1]].style.backgroundColor = "transparent";
+        // cells[winnerIndex[2]].style.backgroundColor = "transparent";
     }
     else
     {
@@ -286,6 +286,9 @@ function displayRoundResultPopup(round)
         cells[winnerIndex[1]].style.backgroundColor = "transparent";
         cells[winnerIndex[2]].style.backgroundColor = "transparent";
     }, 2000); // Adjust the delay time as needed
+
+    console.log(roundResultPopup.style.display);
+
 }
 
 
