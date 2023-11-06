@@ -64,7 +64,7 @@ startButton.addEventListener("click", () => {
 
 xImage.addEventListener("click", () => {
     playerChoice = 'X';
-    cpuChoice = 'O';
+    cpuChoice = 'o';
     currentPlayer = 'X';
     choicePopup.style.display = "none";
 
@@ -172,6 +172,7 @@ async function computerChooseCell()
     // Update the game board and display the computer's choice
     
     gameBoard[emptyIndexes[randomIndex]] = currentPlayer;
+    console.log(gameBoard[emptyIndexes[randomIndex]]);
     cells[emptyIndexes[randomIndex]].style.backgroundImage = `URL("../img/${currentPlayer}.png")`;
     cells[emptyIndexes[randomIndex]].style.backgroundRepeat = 'no-repeat';
     cells[emptyIndexes[randomIndex]].style.backgroundPosition = 'center';
