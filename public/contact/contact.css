@@ -232,7 +232,7 @@ nav ul li a:hover{
 
 
 #select{
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
     /* background-color:#b608f6 ;
     color: whitesmoke; */
     margin-left: 30px;
@@ -247,7 +247,7 @@ nav ul li a:hover{
 }
 #select option{
     /* background-color: rgba(230, 20, 226, 0.748) !important; */
-    font-size: 15px;
+    font-size: 17px;
     margin-left: 30px;
     padding-left: 35px;
     
